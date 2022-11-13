@@ -1,0 +1,35 @@
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+& :hover,
+& :focus {
+    color: var(--accent-text-color);
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link,
+.address__link-map,
+.address__map {
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__link-map,
+.address__map {
+    color: var(--primary-white-color);
+}
+
+.address__link {
+    color: var(--contact-footer-color);
+}
