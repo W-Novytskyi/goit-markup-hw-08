@@ -17,12 +17,12 @@
 .portfolio__card {
     position: relative;
     overflow: hidden;
-}
-
-& :hover .portfolio__card-overlay,
-& :focus .portfolio__card-overlay {
-    opacity: 1;
-    transform: translateY(0);
+    
+    &:hover .portfolio__card-overlay,
+    &:focus .portfolio__card-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .portfolio__card-overlay {
@@ -59,10 +59,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-}
-
-& :hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .portfolio__title-list {

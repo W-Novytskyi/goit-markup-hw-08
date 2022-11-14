@@ -8,21 +8,29 @@
 }
 
 .header__nav-link {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+            display: flex;
+    }
 }
 
 .header__contact {
-    display: flex;
+    display: none;
     gap: 30px;
     align-items: center;
     justify-content: space-between;
-}
+    
+    & :hover,
+    & :focus {
+        color: var(--accent-text-color);
+    }
 
-& :hover,
-& :focus {
-    color: var(--accent-text-color);
+         @media screen and (min-width: $tablet) {
+             display: flex;
+         }
 }
 
 .header__link {

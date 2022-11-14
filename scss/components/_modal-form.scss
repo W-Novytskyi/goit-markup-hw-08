@@ -21,7 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px 39px 40px 41px;
+    padding: 40px;
 
     min-width: 528px;
     min-height: 581px;
@@ -54,10 +54,10 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-}
-
-&:hover .modal__close-icon {
-    fill: var(--accent-text-color);
+    
+    &:hover .modal__close-icon {
+        fill: var(--accent-text-color);
+    }
 }
 
 /* form */
@@ -83,11 +83,16 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-}
+    
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+    }
 
-&:hover,
-&:focus {
-    border-color: var(--accent-text-color);
+    &:hover+.form__icon,
+    &:focus+.form__icon {
+        fill: var(--accent-text-color);
+    }
 }
 
 .form__icon {
@@ -96,11 +101,6 @@
     top: 50%;
     transform: translateY(-50%);
     fill: var(--title-text-color);
-}
-
-& :hover+.form__icon,
-& :focus+.form__icon {
-    fill: var(--accent-text-color);
 }
 
 .form__textarea {
@@ -113,11 +113,6 @@
     resize: none;
     outline: none;
     cursor: pointer;
-}
-
-& :hover,
-& :focus {
-    fill: var(--accent-text-color);
 }
 
 .form__checkbox-control {
@@ -138,7 +133,7 @@
     -moz-appearance: none;
 }
 
-& :checked+.form__icon-check {
+.form__checkbox-input:checked+.form__icon-check {
     background-color: var(--accent-text-color);
     border: 0;
 }
