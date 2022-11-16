@@ -399,7 +399,7 @@ img {
 }
 
 .footer__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -410,6 +410,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
   outline: none;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
@@ -1153,11 +1158,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background: var(--tertiary-white-color);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .preference__card {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .preference__card {
@@ -1185,16 +1195,21 @@ img {
 }
 
 .preference__item {
-  width: 450px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .preference__item {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .preference__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .preference__item {
-    width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
