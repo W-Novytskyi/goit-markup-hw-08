@@ -27,6 +27,8 @@
 
     @media screen and (min-width: $tablet) {
             display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
         }
 }
 
@@ -43,10 +45,9 @@
 }
 
 .preference__item:not(:last-child) {
-    margin-right: 30px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
             margin-bottom: 0;
         }
 }

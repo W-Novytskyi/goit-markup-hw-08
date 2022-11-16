@@ -1,10 +1,19 @@
 .clients__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .clients__item {
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px) / 3);            
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__link {
@@ -20,7 +29,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
+    &:hover,
     &:focus {
         border-color: var(--accent-text-color);
         color: var(--accent-text-color);
