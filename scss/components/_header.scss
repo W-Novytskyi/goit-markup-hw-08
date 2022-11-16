@@ -19,30 +19,40 @@
 
 .header__contact {
     display: none;
-    gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     
     & :hover,
     & :focus {
         color: var(--accent-text-color);
     }
 
-         @media screen and (min-width: $tablet) {
-             display: flex;
-         }
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+
+        @media screen and (min-width: $desktop) {
+            justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+        }
 }
 
 .header__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px 0;
+    padding: 5px 0;
     color: var(--primary-text-color);
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+            padding: 32px 0;
+        }
 }
 
 .header__icon {

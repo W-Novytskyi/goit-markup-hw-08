@@ -1,3 +1,10 @@
+.work {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+
+display: block;
+
 .work__card {
     position: relative;
     display: flex;
@@ -32,4 +39,6 @@
 
 .work__item:not(:last-child) {
     margin-right: 30px;
+}
+    }
 }

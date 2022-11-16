@@ -27,21 +27,20 @@ img {
     height: auto;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .team,
-.work,
+.preference,
 .clients,
 .portfolio {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: $desktop) {
+            padding: 94px 0;
+        }
+    
 }
 
-.preference {
-    padding: 94px 0 0;
+.work {
+    padding: 0 0 94px;
 }
 
 .preference,
