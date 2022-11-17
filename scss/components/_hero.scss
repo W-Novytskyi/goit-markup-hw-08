@@ -19,7 +19,7 @@
         background-image: var(--hero-overlay), url('/images/mobile-background-img@3x.jpg');
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: 481px) and (max-width: $tablet) {
             background-image: var(--hero-overlay), url('/images/tablet-background-img.jpg');
             
                 @media (min-device-pixel-ratio: 2),
@@ -35,7 +35,7 @@
                 }
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: 769px) {
             padding: 200px 0;
             background-image: var(--hero-overlay), url('/images/desktop-background-img.jpg');
             

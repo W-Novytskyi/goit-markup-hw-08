@@ -137,31 +137,82 @@
           <ul class="work__list">
             <li class="work__item">
               <div class="work__card">
-                <img
-                  src="./images/computer.jpg"
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/computer-img.webp 1200w,
+                  ./images/computer-img@2x.webp 2400w,
+                  ./images/computer-img@3x.webp 3600w
+                  "
+
+                  type="image/webp">
+
+                  <img 
+                  srcset="
+                  ./images/computer-img.jpg 1200w,
+                  ./images/computer-img@2x.jpg 2400w,
+                  ./images/computer-img@3x.jpg 3600w
+                  " 
+                  src="./images/computer-img.jpg" 
                   alt="Людина працює за комп'ютером"
-                  width="370"
-                />
+                  sizes="(min-width: 1200px) 30vw">
+                </picture>
+                
                 <h3 class="work__activity-title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work__item">
               <div class="work__card">
-                <img
-                  src="./images/smartphone.jpg"
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/smartphone-img.webp 1200w,
+                  ./images/smartphone-img@2x.webp 2400w,
+                  ./images/smartphone-img@3x.webp 3600w
+                  "
+    
+                  type="image/webp">
+    
+                  <img 
+                  srcset="
+                  ./images/smartphone-img.jpg 1200w,
+                  ./images/smartphone-img@2x.jpg 2400w,
+                  ./images/smartphone-img@3x.jpg 3600w
+                  " 
+                  src="./images/smartphone-img.jpg" 
                   alt="Людина працює зі смартфоном і комп'ютером"
-                  width="370"
-                />
+                  sizes="(min-width: 1200px) 30vw">
+                </picture>
+                
                 <h3 class="work__activity-title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
               <div class="work__card">
-                <img
-                  src="./images/tablet.jpg"
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/tablet-img.webp 1200w,
+                  ./images/tablet-img@2x.webp 2400w,
+                  ./images/tablet-img@3x.webp 3600w
+                  "
+    
+                  type="image/webp">
+    
+                  <img 
+                  srcset="
+                  ./images/tablet-img.jpg 1200w,
+                  ./images/tablet-img@2x.jpg 2400w,
+                  ./images/tablet-img@3x.jpg 3600w
+                  " 
+                  src="./images/tablet-img.jpg" 
                   alt="Людина працює з планшетом"
-                  width="370"
-                />
+                  sizes="(min-width: 1200px) 30vw">
+                </picture>
+
                 <h3 class="work__activity-title">Дизайнерські рішення</h3>
               </div>
             </li>
