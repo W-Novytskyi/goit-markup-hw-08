@@ -25,27 +25,43 @@
       <div class="container">
         <div class="header__nav-link">
           <nav class="nav">
-            <a class="logo" href="./index.html" lang="en" 
+            <a class="logo" href="./index.html" lang="en"
               >Web<span class="logo__header">Studio</span></a
             >
+            <button class="nav__burger-menu js-open-menu">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
             <ul class="nav__list">
-              <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
-              <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакти</a>
+              </li>
             </ul>
           </nav>
           <ul class="header__contact">
             <li>
               <a href="mailto:info@devstudio.com" class="header__link">
                 <svg class="header__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg>                
-               info@devstudio.com </a>
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li>
               <a href="tel:+380961111111" class="header__link">
-                 <svg class="header__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>               
-                +38 096 111 11 11</a></li>
+                <svg class="header__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -66,8 +82,72 @@
           <ul class="portfolio__list-work">
             <li class="portfolio__item">
               <div class="portfolio__card">
-                 <img src="./images/project1.jpg" alt="Макбук із зображенням трьох людей" width="370" />
-              <div class="portfolio__card-overlay">           
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project1-img.webp 1x,
+                  ./images/portfolio/desktop-project1-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project1-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project1-img.jpg 1x,
+                  ./images/portfolio/desktop-project1-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project1-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project1-img.webp 1x,
+                  ./images/portfolio/tablet-project1-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project1-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project1-img.jpg 1x,
+                  ./images/portfolio/tablet-project1-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project1-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project1-img.webp 1x,
+                  ./images/portfolio/mobile-project1-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project1-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project1-img.jpg 1x,
+                  ./images/portfolio/mobile-project1-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project1-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project1-img.jpg" 
+                  alt="Макбук із зображенням трьох людей"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+              
+                 <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               </div>
@@ -78,7 +158,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                 <img src="./images/project2.jpg" alt="Два баскетболіста з м'ячем" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project2-img.webp 1x,
+                  ./images/portfolio/desktop-project2-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project2-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project2-img.jpg 1x,
+                  ./images/portfolio/desktop-project2-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project2-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project2-img.webp 1x,
+                  ./images/portfolio/tablet-project2-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project2-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project2-img.jpg 1x,
+                  ./images/portfolio/tablet-project2-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project2-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project2-img.webp 1x,
+                  ./images/portfolio/mobile-project2-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project2-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project2-img.jpg 1x,
+                  ./images/portfolio/mobile-project2-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project2-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project2-img.jpg" 
+                  alt="Два баскетболіста з м'ячем"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -90,7 +234,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                  <img src="./images/project3.jpg" alt="Логотип ресторану" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project3-img.webp 1x,
+                  ./images/portfolio/desktop-project3-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project3-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project3-img.jpg 1x,
+                  ./images/portfolio/desktop-project3-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project3-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project3-img.webp 1x,
+                  ./images/portfolio/tablet-project3-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project3-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project3-img.jpg 1x,
+                  ./images/portfolio/tablet-project3-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project3-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project3-img.webp 1x,
+                  ./images/portfolio/mobile-project3-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project3-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project3-img.jpg 1x,
+                  ./images/portfolio/mobile-project3-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project3-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project3-img.jpg" 
+                  alt="Логотип ресторану"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -102,7 +310,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                  <img src="./images/project4.jpg" alt="Чорні навушники" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project4-img.webp 1x,
+                  ./images/portfolio/desktop-project4-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project4-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project4-img.jpg 1x,
+                  ./images/portfolio/desktop-project4-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project4-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project4-img.webp 1x,
+                  ./images/portfolio/tablet-project4-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project4-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project4-img.jpg 1x,
+                  ./images/portfolio/tablet-project4-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project4-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project4-img.webp 1x,
+                  ./images/portfolio/mobile-project4-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project4-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project4-img.jpg 1x,
+                  ./images/portfolio/mobile-project4-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project4-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project4-img.jpg" 
+                  alt="Чорні навушники"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -114,7 +386,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                 <img src="./images/project5.jpg" alt="Дві картонні коробки" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project5-img.webp 1x,
+                  ./images/portfolio/desktop-project5-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project5-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project5-img.jpg 1x,
+                  ./images/portfolio/desktop-project5-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project5-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project5-img.webp 1x,
+                  ./images/portfolio/tablet-project5-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project5-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project5-img.jpg 1x,
+                  ./images/portfolio/tablet-project5-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project5-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project5-img.webp 1x,
+                  ./images/portfolio/mobile-project5-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project5-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project5-img.jpg 1x,
+                  ./images/portfolio/mobile-project5-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project5-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project5-img.jpg" 
+                  alt="Дві картонні коробки"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -126,7 +462,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                  <img src="./images/project6.jpg" alt="Монітор із зображенням сайту" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project6-img.webp 1x,
+                  ./images/portfolio/desktop-project6-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project6-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project6-img.jpg 1x,
+                  ./images/portfolio/desktop-project6-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project6-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project6-img.webp 1x,
+                  ./images/portfolio/tablet-project6-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project6-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project6-img.jpg 1x,
+                  ./images/portfolio/tablet-project6-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project6-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project6-img.webp 1x,
+                  ./images/portfolio/mobile-project6-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project6-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project6-img.jpg 1x,
+                  ./images/portfolio/mobile-project6-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project6-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project6-img.jpg" 
+                  alt="Монітор із зображенням сайту"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -138,7 +538,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                   <img src="./images/project7.jpg" alt="Глянцевий журнал" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project7-img.webp 1x,
+                  ./images/portfolio/desktop-project7-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project7-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project7-img.jpg 1x,
+                  ./images/portfolio/desktop-project7-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project7-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project7-img.webp 1x,
+                  ./images/portfolio/tablet-project7-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project7-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project7-img.jpg 1x,
+                  ./images/portfolio/tablet-project7-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project7-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project7-img.webp 1x,
+                  ./images/portfolio/mobile-project7-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project7-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project7-img.jpg 1x,
+                  ./images/portfolio/mobile-project7-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project7-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project7-img.jpg" 
+                  alt="Глянцевий журнал"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -150,7 +614,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                  <img src="./images/project8.jpg" alt="Бірка" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project8-img.webp 1x,
+                  ./images/portfolio/desktop-project8-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project8-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project8-img.jpg 1x,
+                  ./images/portfolio/desktop-project8-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project8-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project8-img.webp 1x,
+                  ./images/portfolio/tablet-project8-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project8-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project8-img.jpg 1x,
+                  ./images/portfolio/tablet-project8-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project8-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project8-img.webp 1x,
+                  ./images/portfolio/mobile-project8-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project8-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project8-img.jpg 1x,
+                  ./images/portfolio/mobile-project8-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project8-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project8-img.jpg" 
+                  alt="Бірка"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -162,7 +690,71 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__card">
-                  <img src="./images/project9.jpg" alt="Людина працює за ноутбуком" width="370" />
+
+                <picture>
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project9-img.webp 1x,
+                  ./images/portfolio/desktop-project9-img@2x.webp 2x,
+                  ./images/portfolio/desktop-project9-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/desktop-project9-img.jpg 1x,
+                  ./images/portfolio/desktop-project9-img@2x.jpg 2x,
+                  ./images/portfolio/desktop-project9-img@3x.jpg 3x
+                  "
+                  
+                  media="(min-width: 1200px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project9-img.webp 1x,
+                  ./images/portfolio/tablet-project9-img@2x.webp 2x,
+                  ./images/portfolio/tablet-project9-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/tablet-project9-img.jpg 1x,
+                  ./images/portfolio/tablet-project9-img@2x.jpg 2x,
+                  ./images/portfolio/tablet-project9-img@3x.jpg 3x               
+                  "
+                  
+                  media="(min-width:768px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project9-img.webp 1x,
+                  ./images/portfolio/mobile-project9-img@2x.webp 2x,
+                  ./images/portfolio/mobile-project9-img@3x.webp 3x
+                  "
+    
+                  type="image/webp"
+                  media="(max-width: 767px)">
+
+                  <source
+                  srcset="
+                  ./images/portfolio/mobile-project9-img.jpg 1x,
+                  ./images/portfolio/mobile-project9-img@2x.jpg 2x,
+                  ./images/portfolio/mobile-project9-img@3x.jpg 3x
+                  "
+
+                  media="(max-width: 767px)">
+
+                  <img 
+                  src="./images/portfolio/mobile-project9-img.jpg" 
+                  alt="Людина працює за ноутбуком"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw">
+                </picture>
+
               <div class="portfolio__card-overlay">           
               <p class="portfolio__text-overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -179,6 +771,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__section">
+      <div class="footer__our-data">
         <div class="footer__address">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="logo__footer">Studio</span></a
@@ -206,6 +799,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer__net-section">
           <h2 class="footer__titel">Приєднуйтесь</h2>
           <ul class="footer__net-list">
@@ -239,7 +833,7 @@
             </li>
           </ul>
         </div>
-
+      </div>
         <div class="footer__form-box">
           <h3 class="footer__titel">Підпишіться на розсилку</h3>
           <form name="footer__form">
@@ -259,5 +853,61 @@
     </div>
   </div>
 </footer>
+
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg class="mobile-menu__close-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a
+              href="./index.html"
+              class="mobile-menu__link"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contact">
+          <li>
+            <a href="tel:+380961111111" class="mobile-menu__tel">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__soc-list">
+          <li class="mobile-menu__soc-item">
+            <a href="#" class="mobile-menu__soc-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" class="mobile-menu__soc-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" class="mobile-menu__soc-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" class="mobile-menu__soc-link">LinkedIn</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
