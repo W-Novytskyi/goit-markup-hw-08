@@ -603,7 +603,6 @@ img {
 }
 
 .hero__title {
-  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--primary-white-color);
@@ -612,6 +611,11 @@ img {
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media (min-width: 360px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media (min-width: 1200px) {
   .hero__title {
