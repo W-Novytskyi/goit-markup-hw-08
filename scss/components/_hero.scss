@@ -5,50 +5,50 @@
     background-color: var(--primary-dark-color);
     padding: 118px 0;
     text-align: center;
-    background-image: var(--hero-overlay), url('/images/mobile-background-img.jpg');
+    background-image: var(--hero-overlay), url('../images/mobile-background-img.jpg');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: var(--hero-overlay), url('/images/mobile-background-img@2x.jpg');
+        background-image: var(--hero-overlay), url('../images/mobile-background-img@2x.jpg');
     }
 
     @media (min-device-pixel-ratio: 3),
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
-        background-image: var(--hero-overlay), url('/images/mobile-background-img@3x.jpg');
+        background-image: var(--hero-overlay), url('../images/mobile-background-img@3x.jpg');
     }
 
     @media (min-width: 481px) and (max-width: $tablet) {
-            background-image: var(--hero-overlay), url('/images/tablet-background-img.jpg');
+            background-image: var(--hero-overlay), url('../images/tablet-background-img.jpg');
             
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: var(--hero-overlay), url('/images/tablet-background-img@2x.jpg');
+                    background-image: var(--hero-overlay), url('../images/tablet-background-img@2x.jpg');
                 }
             
                 @media (min-device-pixel-ratio: 3),
                 (min-resolution: 288dpi),
                 (min-resolution: 3dppx) {
-                    background-image: var(--hero-overlay), url('/images/tablet-background-img@3x.jpg');
+                    background-image: var(--hero-overlay), url('../images/tablet-background-img@3x.jpg');
                 }
     }
 
     @media (min-width: 769px) {
             padding: 200px 0;
-            background-image: var(--hero-overlay), url('/images/desktop-background-img.jpg');
+            background-image: var(--hero-overlay), url('../images/desktop-background-img.jpg');
             
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: var(--hero-overlay), url('/images/desktop-background-img@2x.jpg');
+                    background-image: var(--hero-overlay), url('../images/desktop-background-img@2x.jpg');
                 }
             
                 @media (min-device-pixel-ratio: 3),
                 (min-resolution: 288dpi),
                 (min-resolution: 3dppx) {
-                    background-image: var(--hero-overlay), url('/images/desktop-background-img@3x.jpg');
+                    background-image: var(--hero-overlay), url('../images/desktop-background-img@3x.jpg');
                 }
         }
 }
