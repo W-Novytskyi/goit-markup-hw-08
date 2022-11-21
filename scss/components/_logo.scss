@@ -19,7 +19,10 @@
 
 .logo__header {
     color: var(--logo-black-color);
-    margin-right: 88px;
+
+    @media (min-width: $tablet) {
+            margin-right: 88px;
+        }
 
     @media (min-width: $desktop) {
             margin-right: 93px;
