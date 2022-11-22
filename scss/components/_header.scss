@@ -49,6 +49,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: $desktop) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
+
     @media screen and (min-width: $desktop) {
             padding: 32px 0;
         }
